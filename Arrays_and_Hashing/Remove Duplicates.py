@@ -3,6 +3,11 @@ Problem: 26. Remove Duplicates from Sorted Array
 Difficulty: Easy
 Pattern: Arrays & Hashing (Set Conversion & In-Place Slice Mutation)
 
+--- EXPECTED / OPTIMAL APPROACH ---
+- Pattern: Two Pointers (In-Place Array Modification)
+- Intuition: Maintain a slow pointer (`k`) for the position of unique elements and a fast pointer to scan the array, copying unique items forward in $O(1)$ space.
+- Complexity: Time O(n), Space O(1).
+
 Learning: 
 1. Instant Deduplication via Set:
    - Wrapping `set(nums)` immediately drops all duplicate values out of the array.
