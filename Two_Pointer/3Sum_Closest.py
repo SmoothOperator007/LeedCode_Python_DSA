@@ -3,12 +3,18 @@ Problem: 16. 3Sum Closest
 Difficulty: Medium
 Pattern: Two Pointers (Opposite-Direction Pointers)
 
-Learn:
-Using Sort to make it easier to access List from left and right
-How the pointer movement logic works:
+Learning:
+1. Using Sort: 
+   - Sorting makes it much easier to access and scan the list from left and right systematically.
+2. How the pointer movement logic works:
    - If current_sum == target, we found an exact match (return immediately).
-   - If current_sum is too small, we need a larger value, so we increment `left`, as it is too small we increase the small value so we might get target.
-   - If current_sum is too large, we need a smaller value, so we decrement `right`, as it is too large we decrement the large value to get near target.
+   - If current_sum is too small, we need a larger value, so we increment `left`. 
+     (Since the sum is too small, increasing the smaller value pulls us closer to the target).
+   - If current_sum is too large, we need a smaller value, so we decrement `right`. 
+     (Since the sum is too large, decrementing the larger value pulls us closer to the target).
+3. Complexity:
+   - Time Complexity: O(n^2) due to the outer loop and the inner two-pointer scan.
+   - Space Complexity: O(1) auxiliary space.
 """
 
 class Solution(object):
