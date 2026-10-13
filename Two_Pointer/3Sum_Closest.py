@@ -3,6 +3,11 @@ Problem: 16. 3Sum Closest
 Difficulty: Medium
 Pattern: Two Pointers (Opposite-Direction Pointers)
 
+--- EXPECTED / OPTIMAL APPROACH ---
+- Pattern: Two Pointers (Opposite-Direction Pointers) + Sorting
+- Intuition: Sort the array to enable efficient scanning. Fix one number and use two pointers (left and right) moving inward based on whether the current triplet sum is smaller or larger than the target, updating the closest sum along the way.
+- Complexity: Time O(n^2), Space O(1).
+
 Learning:
 1. Using Sort: 
    - Sorting makes it much easier to access and scan the list from left and right systematically.
