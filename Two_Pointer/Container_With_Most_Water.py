@@ -3,6 +3,11 @@ Problem: 11. Container With Most Water
 Difficulty: Medium
 Pattern: Two Pointers (Opposite-Direction Pointers)
 
+--- EXPECTED / OPTIMAL APPROACH ---
+- Pattern: Two Pointers (Opposite-Direction Pointers) + Greedy Strategy
+- Intuition: Place pointers at both ends of the container. The water area is limited by the shorter line and the distance between them. To maximize area, greedily move the pointer pointing to the shorter line inward in hopes of finding a taller line.
+- Complexity: Time O(n), Space O(1).
+
 Learn:-
 1. Why Opposite-Direction Pointers work:
    - We place one pointer at the extreme left and one at the extreme right of the array.
